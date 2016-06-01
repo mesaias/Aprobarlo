@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.phonegap.pg2016"
+    version   = "1.0.0">
+
+<name>PhoneGap-Solorio</name>
+
+<description>
+Aplicación creada con JQuery Mobile y PhoneGap, mediante Dreamweaver CS6. Isaías Solorio - Mayo de 2016
+</description>
+
+<author href="https://youtube.com/nomam3is" email="mesaias.879@gmail.com">
+Isaías Solorio
+</author>
+
+<icon src="images/jqu.png" gap:density="ldpi" gap:platform="android" />
+<icon src="images/jqu.png" gap:density="mdpi" gap:platform="android" />
+<icon src="images/jqu.png" gap:density="hdpi" gap:platform="android" />
+<icon src="images/jqu.png" gap:density="xhdpi" gap:platform="android" />
+
+</widget>

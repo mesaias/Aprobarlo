@@ -1,0 +1,148 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery Mobile: Theme Download</title>
+  <link rel="stylesheet" href="themes/catalogo.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile.structure-1.0.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="BaseDeDatos/helperBD.js"></script>
+     <script type="text/javascript">
+
+               
+
+ 
+        </script>
+   
+    
+</head>
+<body>
+<!--<body onLoad="onBodyLoad()">
+        
+  <!--  esta es la página de entrada: el listado de clientes-->
+<div data-role="page" id="home"  data-theme="a" >
+      <div data-role="header">
+        <div class="ui-btn-left">
+        <a href="#agregarItem" data-role="button" data-inline="true" data-icon="plus" data-iconpos="notext">Agregar</a>
+        </div>
+        <h1>Productos</h1>
+        <div class="ui-btn-right">
+        <a href="#ayuda" data-role="button" data-inline="true" data-icon="info" data-iconpos="notext">Ayuda</a>
+        </div>
+      </div>
+    <div data-role="content" data-theme="a">
+      <div data-role="collapsible-set">
+        <div data-role="collapsible" id="TarjetasDeVideo">
+          <h3>Tarjetas de vídeo</h3>
+          <p>              
+         
+             
+             
+           
+              <p>                  
+            
+                  </p>
+              </div>
+          
+           
+              </p>
+          </div>
+             <div data-role="collapsible" data-collapsed="true" id="TarjetasMadre">
+          <h3>Tarjetas madres</h3>
+          <p>Contenido</p>
+          </div>
+             <div data-role="collapsible" data-collapsed="true" id="Procesadores">
+          <h3>Procesadores</h3>
+          <p>Contenido</p>
+          </div>
+        <div data-role="collapsible" data-collapsed="true" id="Memorias">
+          <h3>Memorias</h3>
+          <p>Contenido</p>
+          </div>
+        <div data-role="collapsible" data-collapsed="true" id="Almacenamiento">
+          <h3>Almacenamiento</h3>
+          <p>Contenido</p>
+          </div>
+             <div data-role="collapsible" data-collapsed="true" id="Monitores">
+          <h3>Monitores y pantallas</h3>
+          <p>Contenido</p>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+<div data-role="page" id="agregarItem" data-theme="a" >
+    <div data-role="header">
+      <h1>Registro de productos</h1>
+    </div>
+    <div data-role="content">
+    <form method="post" onSubmit="return submitForm()" id="myForm" data-ajax="false">
+    
+      <div data-role="fieldcontain">
+        <label for="textinput2">Nombre del producto:</label>
+        <input type="text" name="nombre" id="campoNombre" value="" placeholder="Producto" />
+      </div>
+      <div data-role="fieldcontain">
+        <label for="textinput3">Imagen:</label>
+       <input type="file" name="imagen" id="campoImagen" accept="image/x-png, image/gif, image/jpeg" />
+      </div>
+      
+       <div data-role="fieldcontain">
+        <label for="textinput3">Descripción:</label>
+        <textarea name="descripcion" id="campoDescripcion" value="" placeholder="Descripción">
+      </textarea>
+      </div>
+      
+      <div data-role="fieldcontain">
+        <label for="textinput">Precio:</label>
+        <input type="number" name="precio" id="campoPrecio" value="" placeholder="Introduce el precio" />
+      </div>
+      <div data-role="fieldcontain">
+        <label for="slider">Stock:</label>
+        <input type="range" name="slider" id="campoStock" value="0" min="0" max="100" />
+      </div>
+      <div data-role="fieldcontain">
+        <label for="selectmenu" class="select">Categoria:</label>
+        <select name="selectmenu" id="campoCategoria" data-theme="a">
+          <option value="TarjetasMadre">Tarjetas de vídeo</option>
+          <option value="Procesadores">Tarjetas madre</option>
+          <option value="Memorias">Memorias</option>
+          <option value="Almacenamiento">Almacenamiento</option>
+          <option value="Monitores">Monitores y pantallas</option>
+        </select>
+      </div>
+      <div data-role="fieldcontain">
+      <label for="textinput5">Fecha de registro:</label>
+      <input type="date" name="textinput5" placeholder="Fecha de registro" id="campoFecha" data-role="datebox"value="" />
+    </div>
+      <button data-icon="checkbox-on" data-iconpos="left" id="btnAceptar" data-theme="a">Aceptar</button>
+
+     
+     
+     
+                </form>
+      
+      
+    
+  </div>
+  <div data-role="footer">
+      <h4>Pie</h4>
+    </div>
+  </div>
+<div data-role="page" id="infoItem" data-theme="a">
+  <div data-role="header">
+    <h1>Detalle</h1>
+  </div>
+  
+  <div data-role="content">Contenido</div>
+  <div data-role="footer">
+    <h4>Pie</h4>
+  </div>
+</div>
+    
+    
+    
+</body>
+</html>
